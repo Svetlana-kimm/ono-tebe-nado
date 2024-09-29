@@ -310,6 +310,7 @@
   padding-bottom: 100px;
   padding-top: 3px;
   padding-right: 402px;
+  white-space: nowrap;
 }
 
 .about_text {
@@ -368,7 +369,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  text-wrap: nowrap;
+  white-space: nowrap;
   text-underline-offset: 4px;
   list-style-type: none;
 }
