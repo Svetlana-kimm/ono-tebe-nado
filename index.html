@@ -34,20 +34,22 @@
         />
       </a>
 
-      <section class="header__info">
-        <a class="header__info_item" href="tel:+99995555555">+9 999 555 5555</a>
-        <a class="header__info_item" href="mailto:info@sobaka.ge"
+      <address class="adress">
+        <a class="adress_info_item adress_header" href="tel:+99995555555"
+          >+9 999 555 5555</a
+        >
+        <a class="adress_info_item adress_header" href="mailto:info@sobaka.ge"
           >info@sobaka.ge</a
         >
-        <address class="header__info_item header__info_address">
+        <p class="adress_info_item adress_header">
           наб. Принсенграхт 263-<br />265, Амстердам
-        </address>
-      </section>
+        </p>
+      </address>
     </header>
 
     <main>
       <section class="cover">
-        <div class="cover_overlay"></div>
+        <div class="overlay"></div>
 
         <h1 class="cover__title">
           <span class="title_word"
@@ -81,7 +83,7 @@
           <li class="lots_card_list_item">
             <a class="card_link">
               <article class="card card_film">
-                <h3 class="card_title">
+                <h3 class="card_title card__title_film">
                   Фильм режиссёра, который бросил киношколу
                 </h3>
                 <p class="card_content">
@@ -89,7 +91,7 @@
                   ставка, если бы вы не знали, что режиссёр — Пол Томас
                   Андерсон?
                 </p>
-                <div class="lots_overlay"></div>
+                <div class="overlay"></div>
               </article>
             </a>
           </li>
@@ -108,7 +110,7 @@
                   эпическую поэму Гомера. Сколько бы вы поставили на «Улисса»
                   Джеймса Джойса?
                 </p>
-                <div class="lots_overlay"></div>
+                <div class="overlay"></div>
               </article>
             </a>
           </li>
@@ -116,7 +118,7 @@
           <li class="lots_card_list_item">
             <a class="card_link">
               <article class="card card_picture">
-                <h3 class="card_title">
+                <h3 class="card_title card__title_picture">
                   Картина, которую повторит даже 5-летний сын маминой подруги
                 </h3>
                 <p class="card_content">
@@ -125,12 +127,12 @@
                   котиков... Сколько бы вы на такое поставили, если бы не знали,
                   что это — одна из революционных работ Кандинского?
                 </p>
-                <div class="lots_overlay"></div>
+                <div class="overlay"></div>
               </article>
             </a>
           </li>
         </ul>
-        <p class="more_info">посмотреть больше</p>
+        <a class="more_info">посмотреть больше</a>
       </section>
 
       <section class="about" id="about">
@@ -142,16 +144,16 @@
           />
         </div>
         <div class="about_all_info">
-          <h3 class="about_title">об аукционе</h3>
-          <article class="about_text">
-            <p class="about_text_first">
+          <h2 class="about_title">об аукционе</h2>
+          <div class="about_text">
+            <p class="about__text">
               Здесь вы не встретите очередное пафосное собрание невероятно
               дорогого антиквариата. Наши лоты вообще не должны были попасть ни
               на один аукцион. Потому что кому нужен дневник девочки-подростка
               или картина, которую может нарисовать даже ребёнок? Кому нужны все
               эти странные вещи, созданные любителями?
             </p>
-            <p class="about_text_second">
+            <p class="about__text">
               Слишком сложные или, наоборот, слишком простые. Опережающие своё
               время. В пух и прах растерзанные критиками. Непринятые и
               непонятые. Когда-то они казались просто неудачными. Но, несмотря
@@ -160,22 +162,24 @@
               вещи не верил никто, продолжали верить их создатели. И сейчас эти
               лоты стали культовыми.
             </p>
-          </article>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <div class="footer__info">
-        <a class="footer__info_item" href="tel:+99995555555">+9 999 555 5555</a>
-        <a class="footer__info_item" href="mailto:info@sobaka.ge"
+      <address class="adress">
+        <a class="adress_info_item adress_footer" href="tel:+99995555555"
+          >+9 999 555 5555</a
+        >
+        <a class="adress_info_item adress_footer" href="mailto:info@sobaka.ge"
           >info@sobaka.ge</a
         >
-        <address class="footer__info_item footer__info_address">
+        <p class="adress_info_item adress_footer">
           наб. Принсенграхт 263- <br />
           265, Амстердам
-        </address>
-      </div>
+        </p>
+      </address>
 
       <nav class="footer_menu">
         <ul class="footer__links-list">
@@ -191,23 +195,32 @@
         </ul>
       </nav>
 
-      <a class="footer_icon">
-        <img
-          class="footer__icon-image-first"
-          src="./images/yt.svg"
-          alt="Иконка ютуба"
-        />
-        <img
-          class="footer__icon-image-second"
-          src="./images/vk.svg"
-          alt="Иконка ВКонтакте"
-        />
-        <img
-          class="footer__icon-image-third"
-          src="./images/pinterest.svg"
-          alt="Иконка Пинтерест"
-        />
-      </a>
+      <ul class="footer_icon">
+        <li class="footer__icon">
+          <a class="footer__icon-image">
+            <img src="./images/yt.svg" alt="Иконка ютуба" />
+          </a>
+        </li>
+        <li class="footer__icon">
+          <a class="footer__icon-image">
+            <img
+              class="footer__icon-image"
+              src="./images/vk.svg"
+              alt="Иконка ВКонтакте"
+            />
+          </a>
+        </li>
+        <li class="footer__icon">
+          <a class="footer__icon-image">
+            <img
+              class="footer__icon-image"
+              src="./images/pinterest.svg"
+              alt="Иконка Пинтерест"
+            />
+          </a>
+        </li>
+      </ul>
+      
     </footer>
   </body>
 </html>
