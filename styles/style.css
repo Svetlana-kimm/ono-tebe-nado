@@ -125,7 +125,6 @@
 }
 
 .cover__description-text {
-  word-spacing: 28px;
   font-size: 22px;
   line-height: 28px;
   font-weight: 400;
@@ -322,7 +321,6 @@
   flex-direction: column;
   gap: 24px;
   line-height: 24px;
-  letter-spacing: 0, 5;
 }
 
 .about_text_first {
