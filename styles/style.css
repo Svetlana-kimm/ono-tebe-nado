@@ -3,7 +3,7 @@
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
-  font-size: 18px;
+  align-items: center;
   font-weight: 400;
   margin: 92px 24px 96px;
   letter-spacing: 0.01em;
@@ -16,6 +16,7 @@
   align-items: center;
   padding: 44px 0 39px 26.52px;
   line-height: 21.13px;
+  font-size: 18px;
 }
 
 .header__links-list {
@@ -39,17 +40,20 @@
 
 /* свойства для блока adress как для header, так и для footer */
 
-.adress_info_item {
+.adress {
   display: flex;
   flex-direction: column;
   text-underline-offset: 4px;
   font-style: normal;
+  font-size: 18px;
   white-space: nowrap;
+  line-height: 1.35;
 }
 
-.adress_header {
-  padding: 5px 25.48px 2px 184px;
-  justify-content: flex-end;
+.header__adress {
+  justify-self: end;
+  margin: 5px 25.48px 2px 184px;
+  min-width: 240.52px;
 }
 
 /* свойства для титульной секции */
@@ -184,27 +188,19 @@
   padding-bottom: 30px;
 }
 
-.card__title_film {
-  padding-bottom: 238px;
-}
-
-.card__title_picture {
-  padding-bottom: 90px;
-}
-
 .lots_card_list_item {
   position: relative;
   width: 334px;
 }
 
 .card {
-  height: cover;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-content: space-between;
   padding: 51px 40px 48px;
+  min-height: 563px;
   z-index: 1;
   background-repeat: no-repeat;
   background-size: cover;
@@ -281,7 +277,7 @@
 }
 
 .about_all_info {
-  padding: 98px 0 13px 0;
+  padding-top: 98px;
 }
 
 .about_title {
@@ -291,7 +287,7 @@
   text-align: left;
   text-transform: uppercase;
   padding-top: 3px;
-  padding-bottom: 92px;
+  padding-bottom: 100px;
   padding-right: 402px;
   white-space: nowrap;
 }
@@ -319,12 +315,6 @@
   justify-content: center;
   font-size: 18px;
   font-weight: 400;
-}
-
-.adress_footer {
-  justify-content: center;
-  margin: 1px 185.48px 0 0;
-  line-height: 24.3px;
 }
 
 .footer_menu {
